@@ -1,0 +1,13 @@
+{
+  "itemGroup.modlistchecker": "Example Mod Tab",
+  "block.modlistchecker.example_block": "Example Block",
+  "item.modlistchecker.example_item": "Example Item",
+
+  "modlistchecker.configuration.title": "ModListChecker Configs",
+  "modlistchecker.configuration.section.modlistchecker.common.toml": "ModListChecker Configs",
+  "modlistchecker.configuration.section.modlistchecker.common.toml.title": "ModListChecker Configs",
+  "modlistchecker.configuration.items": "Item List",
+  "modlistchecker.configuration.logDirtBlock": "Log Dirt Block",
+  "modlistchecker.configuration.magicNumberIntroduction": "Magic Number Text",
+  "modlistchecker.configuration.magicNumber": "Magic Number"
+}
