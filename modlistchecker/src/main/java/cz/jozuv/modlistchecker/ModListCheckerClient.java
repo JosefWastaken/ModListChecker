@@ -1,7 +1,7 @@
 package cz.jozuv.modlistchecker;
 
 import net.neoforged.fml.loading.LoadingModList;
-import net.neoforged.neoforge.client.network.ClientPacketDistributor;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class ModListCheckerClient {
 
         ModListChecker.LOGGER.info("Client odesila modlist: {}", mods);
 
-        ClientPacketDistributor.sendToServer(new ModListPayload(mods));
+        PacketDistributor.sendToServer(new ModListPayload(mods));
         ModListChecker.LOGGER.info("Client odeslal modlist payload.");
     }
 }

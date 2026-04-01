@@ -9,13 +9,6 @@ import java.util.TreeSet;
 
 public class NetworkHandler {
 
-    // TODO: sem dej presny seznam povolenych modu pro vas SMP
-    private static final Set<String> ALLOWED_MODS = Set.of(
-            "minecraft",
-            "neoforge",
-            "modlistchecker"
-    );
-
     public static void register(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar("1");
 
@@ -24,7 +17,12 @@ public class NetworkHandler {
                 ModListPayload.STREAM_CODEC,
                 (payload, context) -> {
                     Set<String> clientMods = new TreeSet<>(payload.mods());
-                    Set<String> allowedMods = new TreeSet<>(ALLOWED_MODS);
+
+                    Set<String> allowedMods = new TreeSet<>(
+                            ServerConfig.ALLOWED_MODS.get().stream()
+                                    .map(String::valueOf)
+                                    .toList()
+                    );
 
                     Set<String> missing = new TreeSet<>(allowedMods);
                     missing.removeAll(clientMods);

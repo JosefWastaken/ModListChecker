@@ -4,7 +4,7 @@ import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 public record ModListPayload(List<String> mods) implements CustomPacketPayload {
 
     public static final Type<ModListPayload> TYPE =
-            new Type<>(Identifier.fromNamespaceAndPath(ModListChecker.MODID, "mod_list_payload"));
+            new Type<>(ResourceLocation.fromNamespaceAndPath(ModListChecker.MODID, "mod_list_payload"));
 
     public static final StreamCodec<ByteBuf, ModListPayload> STREAM_CODEC =
             StreamCodec.composite(
