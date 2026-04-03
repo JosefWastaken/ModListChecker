@@ -15,7 +15,9 @@ public class ServerConfig {
                 .comment("Seznam povolenych mod ID")
                 .defineListAllowEmpty(
                         "allowedMods",
-                        List.of("minecraft", "neoforge", "modlistchecker"),
+                        List.of(
+                                "minecraft", "neoforge", "modlistchecker"
+                        ),
                         obj -> obj instanceof String
                 );
 
