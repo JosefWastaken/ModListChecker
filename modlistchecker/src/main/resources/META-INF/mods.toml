@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[54,)"
+license="GPL-3.0-only"
+
+[[mods]]
+modId="modlistchecker"
+version="1.0.0"
+displayName="ModListChecker"
+authors="jozuv"
+description='''
+Checks client mod lists against server rules.
+'''
+
+[[dependencies.modlistchecker]]
+modId="forge"
+mandatory=true
+versionRange="[54,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.modlistchecker]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
