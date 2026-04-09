@@ -25,6 +25,15 @@ public class NetworkHandler {
                 .encoder(ModListPayload::encode)
                 .decoder(ModListPayload::decode)
                 .consumerMainThread((payload, context) -> {
+                    if (context.getSender() == null) {
+                        return;
+                    }
+
+                    if (!context.getSender().server.isDedicatedServer()) {
+                        ModListChecker.LOGGER.info("Integrated server detected, preskakuji kontrolu modlistu.");
+                        return;
+                    }
+
                     Set<String> clientMods = new TreeSet<>(payload.mods());
 
                     Set<String> allowedMods = new TreeSet<>(

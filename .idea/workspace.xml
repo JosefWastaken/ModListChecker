@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab52bcc6-cab0-4032-9051-89de4f62d410" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/ClientEvents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/ModListCheckerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/ModListPayload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/NetworkHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/ServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modlistchecker/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modlistchecker/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/ModListChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/ModListChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modlistchecker/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/modlistchecker/src/main/resources/META-INF/mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/NetworkHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/modlistchecker/src/main/java/cz/jozuv/modlistchecker/NetworkHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +61,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3BzReHVEGT8zqQBqsHKS5UeRrst" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -85,7 +79,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Forge__1.21.1",
+    "git-widget-placeholder": "forge__1.21.1",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
