@@ -1,6 +1,7 @@
 package cz.jozuv.modlistchecker;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
@@ -16,6 +17,15 @@ public class NetworkHandler {
                 ModListPayload.TYPE,
                 ModListPayload.STREAM_CODEC,
                 (payload, context) -> {
+                    if (!(context.player() instanceof ServerPlayer serverPlayer)) {
+                        return;
+                    }
+
+                    if (!serverPlayer.server.isDedicatedServer()) {
+                        ModListChecker.LOGGER.info("Integrated server detected, preskakuji kontrolu modlistu.");
+                        return;
+                    }
+
                     Set<String> clientMods = new TreeSet<>(payload.mods());
 
                     Set<String> allowedMods = new TreeSet<>(
