@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "modlistchecker",
+	"version": "${version}",
+	"name": "ModListChecker",
+	"description": "Checks whether the client's mod list matches the server requirements.",
+	"authors": [
+		"JozoWasTaken"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/JosefWastaken/ModListChecker"
+	},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cz.jozuv.modlistchecker.ModListChecker"
+		],
+		"client": [
+			"cz.jozuv.modlistchecker.client.ModListCheckerClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
